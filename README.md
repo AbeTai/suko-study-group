@@ -1,1 +1,0 @@
-# suko-study-group
