@@ -1,0 +1,16 @@
+# Site settings
+title: 勉強会まとめサイト # サイトのタイトル (任意)
+description: Google Driveの資料をGeminiで要約して自動公開 # サイトの説明 (任意)
+
+# Build settings
+markdown: kramdown # 使用するMarkdownパーサー (通常はkramdown)
+theme: minima # 使用するテーマ (デフォルトのminimaを推奨)
+plugins:
+  - jekyll-feed # 必要に応じてプラグイン追加
+
+# Defaults (_posts 以下のファイルにデフォルト値を適用)
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post" # _posts 内のファイルに post.html レイアウトを適用
