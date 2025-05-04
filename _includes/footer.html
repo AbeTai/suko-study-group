@@ -1,0 +1,34 @@
+{% comment %}
+  --------------------------------------------------------------------------
+  カスタムフッター (Minimaテーマベース)
+  - サイトタイトルと説明をシンプルに表示
+  - RSSフィードリンクを削除
+  - ソーシャルリンク表示部分を削除
+  - 著者情報表示部分を削除
+  --------------------------------------------------------------------------
+{% endcomment %}
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        {%- if site.title %}
+        <!-- サイトタイトル (太字) -->
+        <p style="margin-bottom: 0.5em;"><strong>{{ site.title | escape }}</strong></p>
+        {%- endif %}
+
+        {%- if site.description %}
+        <!-- サイト説明 -->
+        <p style="font-size: 0.9em; color: #828282;">{{ site.description | escape }}</p>
+        {%- endif %}
+      </div>
+    </div>
+
+    {% comment %} RSSフィードとソーシャルリンク部分は完全に削除 {% endcomment %}
+
+  </div>
+
+</footer>
